@@ -1,16 +1,21 @@
-chrome.runtime.onInstalled.addListener(function () {
-  chrome.storage.sync.set({ engineSearch: 'brainly' }, function () {
-    console.log('Setando As Configurações');
-  });
+var rule2 = {
+  conditions: [
+    new chrome.declarativeContent.PageStateMatcher({
+      pageUrl: {
+        hostEquals: 'docs.google.com', schemes: ['https']
+      },
+    }),
+    new chrome.declarativeContent.PageStateMatcher({
+      pageUrl: {
+        hostEquals: 'classroom.google.com', schemes: ['https']
+      },
+    })
+  ],
+  actions: [new chrome.declarativeContent.ShowPageAction()]
+};
+chrome.runtime.onInstalled.addListener(function (details) {
+  console.log(details)
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
-    chrome.declarativeContent.onPageChanged.addRules([{
-      conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: { hostEquals: 'docs.google.com' },
-      }),
-      new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: { hostEquals: 'developer.chrome.com' },
-      })],
-      actions: [new chrome.declarativeContent.ShowPageAction()]
-    }]);
+    chrome.declarativeContent.onPageChanged.addRules([rule2]);
   });
 });
