@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](blob/master/LICENCE)
 [![Twitter: pedrinho_lemes](https://img.shields.io/twitter/follow/pedrinho_lemes.svg?style=social)](https://twitter.com/pedrinho_lemes)
 
-> Tools dor your classroom
+> Tools for your classroom
 
 ### [🏠 Homepage](https://github.com/pedrinholemes/class-tools#readme)
 
@@ -13,13 +13,13 @@
 
 ## Install
 
-```sh
+```
 Open chrome
 ```
 
 ## Usage
 
-```sh
+```
 Enter in form
 ```
 

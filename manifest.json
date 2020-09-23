@@ -1,12 +1,13 @@
 {
   "name": "Class Tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tools for your classroom",
   "manifest_version": 2,
   "permissions": [
     "activeTab",
     "storage",
-    "declarativeContent"
+    "declarativeContent",
+    "contextMenus"
   ],
   "page_action": {
     "default_popup": "src/popup.html"

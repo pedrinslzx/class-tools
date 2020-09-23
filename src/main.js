@@ -11,7 +11,7 @@ var rule2 = {
       },
     })
   ],
-  actions: [new chrome.declarativeContent.ShowPageAction()]
+  actions: [new chrome.declarativeContent.ShowPageAction(), createContextMenuItems()]
 };
 chrome.runtime.onInstalled.addListener(function (details) {
   console.log(details)
@@ -19,3 +19,26 @@ chrome.runtime.onInstalled.addListener(function (details) {
     chrome.declarativeContent.onPageChanged.addRules([rule2]);
   });
 });
+function searchOnBrainly(info, tab) {
+  chrome.tabs.create({
+    url: "https://brainly.com.br/app/ask?q=" + info.selectionText
+  });
+}
+function searchOnGoogle(info, tab) {
+  chrome.tabs.create({
+    url: "https://google.com/search?q=" + info.selectionText
+  });
+}
+function createContextMenuItems() {
+  chrome.contextMenus.create({
+    title: "Pesquisar no Brainly",
+    contexts: ["selection"],
+    onclick: searchOnBrainly
+  });
+  chrome.contextMenus.create({
+    title: "Pesquisar no Google",
+    contexts: ["selection"],
+    onclick: searchOnGoogle
+  });
+}
+
