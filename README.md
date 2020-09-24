@@ -1,6 +1,6 @@
 # Welcome to Class Tools 👋
 
-[![Version](https://img.shields.io/badge/Version-0.0.2-blue)](https://github.com/pedrinholemes/class-tools#readme)
+[![GitHub manifest version](https://img.shields.io/github/manifest-json/v/pedrinholemes/class-tools)](#)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/pedrinholemes/class-tools/tree/master/docs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](blob/master/LICENCE)
 [![Twitter: pedrinho_lemes](https://img.shields.io/twitter/follow/pedrinho_lemes.svg?style=social)](https://twitter.com/pedrinho_lemes)
