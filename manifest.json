@@ -1,6 +1,6 @@
 {
   "name": "Class Tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tools for your classroom",
   "manifest_version": 2,
   "permissions": [
@@ -10,8 +10,28 @@
     "contextMenus"
   ],
   "page_action": {
-    "default_popup": "src/popup.html"
+    "default_popup": "src/popup.html",
+  "default_icon": {
+      "16": "images/wolf-16.png",
+      "32": "images/wolf-32.png",
+      "48": "images/wolf-48.png",
+      "64": "images/wolf-64.png",
+      "128": "images/wolf-128.png",
+      "256": "images/wolf-256.png",
+      "512": "images/wolf-512.png",
+      "1024": "images/wolf-1024.png"
+    }
   },
+  "icons": {
+      "16": "images/wolf-16.png",
+      "32": "images/wolf-32.png",
+      "48": "images/wolf-48.png",
+      "64": "images/wolf-64.png",
+      "128": "images/wolf-128.png",
+      "256": "images/wolf-256.png",
+      "512": "images/wolf-512.png",
+      "1024": "images/wolf-1024.png"
+    },
   "background": {
     "scripts": [
       "src/main.js"
